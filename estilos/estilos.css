@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+:root {
+    --cor-primaria: #c3aaa5;
+    --cor-secundaria: #d76483;
+    --cor-terciaria: #ef9ca4;
+    --cor-quarta: #ffc2bb;
+    --cor-quinta: #f6e5cb;
+
+    --fonte-primaria: 'Alex Brush', cursive;
+    --fonte-secundaria: 'Arial';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    padding: 1% 30%;
+    background-color: var(--cor-primaria);
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.aba {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quinta);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+h1 {
+    font-family: var(--fonte-primaria);
+    font-size: 8vh;
+}
+.nos{
+   font-size: 30px;
+   text-align: center;
+   padding-left: 2px;
+}
+
+.beleza, .perfumes, .cabelos {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    height: 260px;
+    padding: 25px 20px;
+}
+
+.perfumes {
+    background-color: var(--cor-primaria);
+} 
+.rodape {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-primaria);
+}
+.nos-li{
+    font-size: 30px;
+   text-align: center;
+}
+.mujer {
+    text-align: center; 
+
+}
+.mujer img {
+    width: 500px;
+    
+}
+.espelho{
+    text-align: center;
+}
+
+.batom:hover,
+.paleta:hover,
+.bases:hover,
+.perfume1:hover,
+.perfume2:hover,
+.perfume3:hover,
+.tinta:hover,
+.shampoo:hover,
+.condicionador:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+}
+
+
+
