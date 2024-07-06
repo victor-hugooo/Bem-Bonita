@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="icon" href="imagens/MUjeer.png" type="image/x-icon">
+    <title>Home</title>
+</head>
+<body>
+    <header class="cabeca">
+        <img src="imagens/Bem Bonita.png" class="logo">
+        <nav class="menu">
+            <a href="home.html" class="aba">Home</a>
+            <a href="index.html" class="aba">Produtos</a>
+            <a href="Nós.html" class="aba">Nós</a>
+            <a href="contato.html" class="aba">Contato</a>
+        </nav>
+    </header>
+    <h1>Olhe no espelho e veja sua melhor versão!</h1>
+    <div class="espelho">
+        <video id="video" autoplay></video>
+    </div>
+    <footer class="rodape">&copy bem bonita</footer>
+
+    <script>
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+                var video = document.getElementById('video');
+                video.srcObject = stream;
+                video.onloadedmetadata = function(e) {
+                    video.play();
+                };
+            })
+            .catch(function(err) {
+                console.log("Ocorreu um erro ao acessar a câmera: " + err);
+            });
+    </script>
+</body>
+</html>
