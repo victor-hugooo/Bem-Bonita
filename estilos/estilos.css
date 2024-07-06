@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+/* Variáveis de cor e fonte */
+:root {
+    --cor-primaria: #c3aaa5;
+    --cor-secundaria: #d76483;
+    --cor-terciaria: #ef9ca4;
+    --cor-quarta: #ffc2bb;
+    --cor-quinta: #f6e5cb;
+
+    --fonte-primaria: 'Alex Brush', cursive;
+    --fonte-secundaria: 'Arial';
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do body */
+body {
+    background-color: white;
+}
+
+/* Estilos do cabeçalho */
+header {
+    padding: 1% 30%;
+    background-color: var(--cor-primaria);
+}
+
+/* Estilos do menu */
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+/* Estilos dos links do menu */
+.aba {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-quinta);
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilos dos títulos */
+h1, h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+h1 {
+    font-family: var(--fonte-primaria);
+    font-size: 8vh;
+}
+
+.nos {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 2px;
+}
+
+/* Estilos para os blocos de categorias */
+.beleza, .perfumes, .cabelos {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    height: 260px;
+    padding: 25px 20px;
+}
+
+.perfumes {
+    background-color: var(--cor-primaria);
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-primaria);
+}
+
+.nos-li {
+    font-size: 30px;
+    text-align: center;
+}
+.tururu{
+    color: white;
+}
+
+/* Estilos para a imagem 'Mulher' */
+.mujer {
+    text-align: center; 
+}
+
+.mujer img {
+    width: 500px;
+}
+
+/* Estilos para o espelho */
+.espelho {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    background-color: #C3AAA5; 
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto; 
+    border: 10px solid #C3AAA5; 
+}
+
+/* Estilos para o vídeo no espelho */
+#video {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    transform: scaleX(-1); 
+}
+
+/* Efeitos de hover */
+.batom:hover,
+.paleta:hover,
+.bases:hover,
+.perfume1:hover,
+.perfume2:hover,
+.perfume3:hover,
+.tinta:hover,
+.shampoo:hover,
+.condicionador:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+    filter: brightness(90%) saturate(120%) hue-rotate(10deg) sepia(20%);
+}
+
+/* Fundo */
+.fundo {
+    background-color: var(--cor-primaria);
+}
+
+/* Estilos específicos para o formulário de sugestões */
+.suggestion-form {
+    background-color: var(--cor-quinta);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-form h2 {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    margin-bottom: 20px;
+}
+
+.suggestion-form label {
+    display: block;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria);
+    margin-bottom: 5px;
+}
+
+.suggestion-form input[type="text"],
+.suggestion-form input[type="email"],
+.suggestion-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 5px;
+    background-color: var(--cor-quarta);
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria);
+}
+
+.suggestion-form button {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion-form button:hover {
+    background-color: var(--cor-terciaria);
+}
+
+
+
+
+
+
+
+
+
